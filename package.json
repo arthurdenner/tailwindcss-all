@@ -1,0 +1,26 @@
+{
+  "name": "tailwindcss-all",
+  "version": "0.0.0",
+  "description": "TailwindCSS plugin that adds utilities for the `all` CSS property",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurdenner/tailwindcss-all.git"
+  },
+  "keywords": [
+    "tailwind",
+    "plugin"
+  ],
+  "author": "Arthur Denner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arthurdenner/tailwindcss-all/issues"
+  },
+  "homepage": "https://github.com/arthurdenner/tailwindcss-all#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
