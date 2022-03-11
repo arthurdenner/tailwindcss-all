@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-all",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "TailwindCSS plugin that adds utilities for the `all` CSS property",
   "main": "index.js",
   "scripts": {
