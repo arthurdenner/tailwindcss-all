@@ -476,27 +476,19 @@
         }
 
         const currentUrl = new URL(window.location.href);
-
-        if (utility) {
-          currentUrl.searchParams.set('utility', utility);
-        } else {
-          currentUrl.searchParams.delete('utility');
-        }
-
+        currentUrl.hash = utility;
         const newPath = currentUrl.href;
         window.history.pushState({ path: newPath }, '', newPath);
       }
 
       function onLoad(path) {
-        const { search } = new URL(path);
-        const params = new URLSearchParams(search);
-        const value = params.get('utility') || '';
+        const value = path.split('#')[1] || '';
 
         selector.value = value;
         onSelect(value, false);
       }
 
-      onLoad(window.location.href);
+      onLoad(window.location.hash);
       selector.addEventListener('change', (evt) => onSelect(evt.target.value));
       window.addEventListener('popstate', (evt) => onLoad(evt.state.path));
     </script>
